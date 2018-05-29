@@ -5,6 +5,31 @@ This repository is the implementation of the paper *Viewpoint Estimation for Wor
 
 ----------------------------------------
 
+### Requirements
+
+- PyTorch and Torchvision  
+    Currently, we support the following versions of PyTorch.
+
+    |             | Python 2.7 | Python 3.6 |
+    |:-----------:|:----------:|:----------:|
+    | PyTorch 0.3 |      √     |      √     |
+    | PyTorch 0.4 |      √     |      √     |
+    | PyTorch 0.5 |      √     |      √     |
+
+- TensorboardX and Tensorboard (Optional)  
+    To visualize the progress of training, we use TensorboardX to plot the loss and the accuracy in Tensorboard. The libaray TensorboardX can be installed by pip.  
+    ```bash
+    pip install tensorboardX
+    ```  
+    Also, remember to install [Tensorflow](https://www.tensorflow.org) and [Tensorboard](https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard).  
+    If you don't want to use Tensorboard, simply set `writer = None` in [train.py](sources/train.py).
+- Other Dependencies  
+    Other dependencies are written in [requirements.txt](sources/requirements.txt), you can install them by pip.  
+    ```bash
+    cd sources
+    pip install -r requirements.txt
+    ```
+
 ### Dataset Preparation
 
 The data is read according to the filelists in `dataset` directory. Your may manually edit these files, or you can also generate the filelists by running our script ([dataset/generate.py](dataset/generate.py)).
@@ -57,31 +82,7 @@ Finally, run the script, and you will get the filelists in `dataset` folder.
 
 ### Train
 
-1. Install the requirements  
-    - PyTorch and Torchvision  
-        Currently, we support the following versions of PyTorch.
-
-        |             | Python 2.7 | Python 3.6 |
-        |:-----------:|:----------:|:----------:|
-        | PyTorch 0.3 |      √     |      √     |
-        | PyTorch 0.4 |      √     |      √     |
-        | PyTorch 0.5 |      √     |      √     |
-
-    - TensorboardX and Tensorboard (Optional)  
-        To visualize the progress of training, we use TensorboardX to plot the loss and the accuracy in Tensorboard. The libaray TensorboardX can be installed by pip.  
-        ```bash
-        pip install tensorboardX
-        ```  
-        Also, remember to install [Tensorflow](https://www.tensorflow.org) and [Tensorboard](https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard).  
-        If you don't want to use Tensorboard, simply set `writer = None` in [train.py](sources/train.py).
-    - Other Dependencies  
-        Other dependencies are written in [requirements.txt](sources/requirements.txt), you can install them by pip.  
-        ```bash
-        cd sources
-        pip install -r requirements.txt
-        ```
-
-2. Set the parameters  
+1. Set the parameters  
     Our paremeters are written in [sources/train.py](sources/train.py). You can edit it manually.  
     - Replace the filelists with your own filelists:  
         ```python
@@ -120,7 +121,7 @@ Finally, run the script, and you will get the filelists in `dataset` folder.
     - Tensorboard Writer  
     If you have installed Tensorboard and TensorboardX, by default, we will use TensorboardX to visualize the training process. Otherwise, we will skip it. The outputs will be written to `sources/runs`. If you don't want to use Tensorboard, you may set `writer = None` in your code.
 
-3. Train your own model  
+2. Train your own model  
     ```bash
     cd sources
     python train.py
