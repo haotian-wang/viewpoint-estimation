@@ -60,11 +60,13 @@ Finally, run the script, and you will get the filelists in `dataset` folder.
 1. Install the requirements  
     - PyTorch and Torchvision  
         Currently, we support the following versions of PyTorch.
+
         |             | Python 2.7 | Python 3.6 |
         |:-----------:|:----------:|:----------:|
         | PyTorch 0.3 |      √     |      √     |
         | PyTorch 0.4 |      √     |      √     |
         | PyTorch 0.5 |      √     |      √     |
+
     - TensorboardX and Tensorboard (Optional)  
         To visualize the progress of training, we use TensorboardX to plot the loss and the accuracy in Tensorboard. The libaray TensorboardX can be installed by pip.  
         ```bash
