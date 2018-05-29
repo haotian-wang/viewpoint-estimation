@@ -96,13 +96,13 @@ Finally, run the script, and you will get the filelists in `dataset` folder.
             'epoch': 60,
             'batch_size': 128,
             'n_classes': 7,
-            'test_steps': 50
+            'test_steps': 50,
+            # Whether to use GPU?
+            # None      -- CPU only
+            # 0 or (0,) -- Use GPU0
+            # (0, 1)    -- Use GPU0 and GPU1
+            'GPUs': 0
         }
-        ```  
-    - Data Parallel  
-    If you have multiple GPUs, you may use `torch.nn.DataParallel` to boost your performance. To use Data Parallel, you can uncomment the following code, and set `device_ids` to your available GPUs.  
-        ```python
-        model = nn.DataParallel(model, device_ids=(0, 1))
         ```  
     - Tensorboard Writer  
     If you have installed Tensorboard and TensorboardX, by default, we will use TensorboardX to visualize the training process. Otherwise, we will skip it. The outputs will be written to `sources/runs`. If you don't want to use Tensorboard, you may set `writer = None` in your code.
