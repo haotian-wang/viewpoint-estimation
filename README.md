@@ -57,16 +57,27 @@ Finally, run the script, and you will get the filelists in `dataset` folder.
 
 ### Train
 
-1. Install the requirements 
-    ```bash
-    cd sources
-    pip install -r Requirements.txt
-    ```  
-    **Note:** Currently, we support both `Python 2` and `Python 3`. If your `PyTorch` version is `0.4.0` or newer, you should replace all `.data[0]` to `.item()` in our codes.  
-    If you want to use Tensorboard while training, you need to install Tensorboard and TensorboardX (a library to write summaries in Tensorboard for PyTorch).  
-    ```bash
-    pip install tensorflow tensorboard tensorboardX
-    ```
+1. Install the requirements  
+    - PyTorch and Torchvision  
+        Currently, we support the following versions of PyTorch.
+        |             | Python 2.7 | Python 3.6 |
+        |:-----------:|:----------:|:----------:|
+        | PyTorch 0.3 |      √     |      √     |
+        | PyTorch 0.4 |      √     |      √     |
+        | PyTorch 0.5 |      √     |      √     |
+    - TensorboardX and Tensorboard (Optional)  
+        To visualize the progress of training, we use TensorboardX to plot the loss and the accuracy in Tensorboard. The libaray TensorboardX can be installed by pip.  
+        ```bash
+        pip install tensorboardX
+        ```  
+        Also, remember to install [Tensorflow](https://www.tensorflow.org) and [Tensorboard](https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard).  
+        If you don't want to use Tensorboard, simply set `writer = None` in [train.py](sources/train.py).
+    - Other Dependencies  
+        Other dependencies are written in [requirements.txt](sources/requirements.txt), you can install them by pip.  
+        ```bash
+        cd sources
+        pip install -r requirements.txt
+        ```
 
 2. Set the parameters  
     Our paremeters are written in [sources/train.py](sources/train.py). You can edit it manually.  

@@ -1,8 +1,7 @@
 numpy
 matplotlib
-torch
+torch>=0.3.0
 torchvision
 tqdm
 pillow
-tensorboardX
 scikit-learn
