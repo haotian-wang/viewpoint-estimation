@@ -17,11 +17,9 @@ This repository is the implementation of the paper *Viewpoint Estimation for Wor
 - TensorboardX and Tensorboard (Optional)
 
     To visualize the progress of training, we use TensorboardX to plot the loss and the accuracy in Tensorboard. The libaray TensorboardX can be installed by pip.
-
     ```bash
     pip install tensorboardX
     ```
-
     Also, remember to install [Tensorflow](https://www.tensorflow.org) and [Tensorboard](https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard). If you don't want to use Tensorboard, simply set `writer = None` in [train.py](sources/train.py).
 
 - Other Dependencies
@@ -87,9 +85,7 @@ Finally, run the script, and you will get the filelists in `dataset` folder.
 ### Train
 
 1. Set the parameters
-
     Our paremeters are written in [sources/train.py](sources/train.py). You can edit it manually.
-
     - Replace the filelists with your own filelists:
 
         ```python
@@ -111,7 +107,6 @@ Finally, run the script, and you will get the filelists in `dataset` folder.
                 ])
             )
         ```
-
     - Set your own parameters
 
         ```python
@@ -127,13 +122,11 @@ Finally, run the script, and you will get the filelists in `dataset` folder.
             'GPUs': 0
         }
         ```
-
     - Tensorboard Writer
 
         If you have installed Tensorboard and TensorboardX, by default, we will use TensorboardX to visualize the training process. Otherwise, we will skip it. The outputs will be written to `sources/runs`. If you don't want to use Tensorboard, you may set `writer = None` in your code.
 
 2. Train your own model
-
     ```bash
     cd sources
     python train.py
