@@ -1,8 +1,8 @@
-## Viewpoint Estimation for Workpieces with Deep Transfer Learning from Cold to Hot
+# Viewpoint Estimation for Workpieces with Deep Transfer Learning from Cold to Hot
 
 This repository is the implementation of the paper *Viewpoint Estimation for Workpieces with Deep Transfer Learning from Cold to Hot* in *ICONIP 2018*. The code is implemented based on [PyTorch](https://pytorch.org/).
 
-### Requirements
+## Requirements
 
 - PyTorch and Torchvision
 
@@ -30,7 +30,7 @@ This repository is the implementation of the paper *Viewpoint Estimation for Wor
     pip install -r requirements.txt
     ```
 
-### Dataset Preparation
+## Dataset Preparation
 
 The data is read according to the filelists in `dataset` directory. Your may manually edit these files, or you can also generate the filelists by running our script ([dataset/generate.py](dataset/generate.py)).
 
@@ -82,7 +82,7 @@ WP = ['wp{}'.format(i) for i in range(1, 9)]
 
 Finally, run the script, and you will get the filelists in `dataset` folder.
 
-### Train
+## Train
 
 1. Set the parameters
     Our paremeters are written in [sources/train.py](sources/train.py). You can edit it manually.
@@ -132,7 +132,7 @@ Finally, run the script, and you will get the filelists in `dataset` folder.
     python train.py
     ```
 
-### Test
+## Test
 
 Replace the parameters and the dataset in [sources/test.py](sources/test.py) with our own choice just like [Train](#train), and replace the name of the pre-trained model. Then run [test.py](sources/test.py) to test your model.
 
