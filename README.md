@@ -7,6 +7,7 @@ This repository is the implementation of the paper *Viewpoint Estimation for Wor
 - PyTorch and Torchvision
 
     Currently, we support the following versions of PyTorch.
+
     |             | Python 2.7 | Python 3.6 |
     |:-----------:|:----------:|:----------:|
     | PyTorch 0.3 |      √     |      √     |
