@@ -3,6 +3,7 @@ import sys
 sys.path.append('sources')
 import torch
 import unittest
+from tqdm import trange
 from torch.autograd import Variable
 from torchvision import transforms
 from predict import predict
@@ -19,7 +20,7 @@ class NetTester(unittest.TestCase):
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         ])
-        for _ in range(32):
+        for _ in trange(32, ascii=True):
             input_cad = torch.rand(batchsize, 3, 300, 300)
             input_real = torch.rand(batchsize, 3, 300, 300)
             input_cad, input_real = Variable(input_cad), Variable(input_real)
