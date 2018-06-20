@@ -1,5 +1,7 @@
 # Viewpoint Estimation for Workpieces with Deep Transfer Learning from Cold to Hot
 
+[![Build Status](https://travis-ci.org/haotian-wang/viewpoint-estimation.svg?branch=master)](https://travis-ci.org/haotian-wang/viewpoint-estimation)
+
 This repository is the implementation of the paper *Viewpoint Estimation for Workpieces with Deep Transfer Learning from Cold to Hot* in *ICONIP 2018*. The code is implemented based on [PyTorch](https://pytorch.org/).
 
 ## Requirements
