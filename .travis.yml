@@ -23,6 +23,7 @@ install:
   - conda create -q -n pytorch python=$TRAVIS_PYTHON_VERSION
   - source activate pytorch
   - conda install -y pytorch-cpu torchvision-cpu -c pytorch
+  - conda install -y numpy matplotlib tqdm pillow scikit-learn
   - conda install -y pytest
 
 script:
