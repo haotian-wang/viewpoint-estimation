@@ -25,6 +25,7 @@ install:
   - source activate pytorch
 
 script:
+  - conda activate pytorch
   - cd sources
   - echo "from network import Model" >> travis_test.py
   - echo "model = Model(7)" >> travis_test.py
