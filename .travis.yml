@@ -26,7 +26,6 @@ install:
 
 script:
   - cd sources
-  - python test.py
   - echo "from network import Model" >> travis_test.py
   - echo "model = Model(7)" >> travis_test.py
   - echo "print(model)" >> travis_test.py
