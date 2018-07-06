@@ -37,7 +37,8 @@ install:
   - conda create -q -n pytorch python=$TRAVIS_PYTHON_VERSION
   - source activate pytorch
   - conda install -y pytorch=$PYTORCH -c soumith
-  - conda install -y torchvision-cpu -c pytorch
+  - pip install torchvision
+  # - conda install -y torchvision-cpu -c pytorch
   # - conda install -y numpy matplotlib tqdm pillow scikit-learn
   # - conda install -y pytest
 script:
