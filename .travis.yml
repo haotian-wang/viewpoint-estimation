@@ -23,7 +23,7 @@ matrix:
     - python: "3.6"
       env: PYTORCH=0.1.6
 install:
-  - sudo apt-get update
+  - sudo apt-get update -qq
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
       wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
     else
@@ -34,14 +34,13 @@ install:
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
 
-  - echo PyTorch Version -- $PYTORCH
-
   - conda create -q -n pytorch python=$TRAVIS_PYTHON_VERSION
   - source activate pytorch
   - conda install -y pytorch=$PYTORCH -c soumith
   - conda install -y torchvision-cpu -c pytorch
-  - conda install -y numpy matplotlib tqdm pillow scikit-learn
-  - conda install -y pytest
+  # - conda install -y numpy matplotlib tqdm pillow scikit-learn
+  # - conda install -y pytest
 
-#script:
+script:
+   - echo Helloworld!
 #  - pytest test/
