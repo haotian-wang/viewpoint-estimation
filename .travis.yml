@@ -4,15 +4,6 @@ python:
   - "3.5"
   - "3.6"
 env:
-  - PYTORCH=0.1
-  - PYTORCH=0.1.6
-  - PYTORCH=0.1.7
-  - PYTORCH=0.1.8
-  - PYTORCH=0.1.9
-  - PYTORCH=0.1.10
-  - PYTORCH=0.1.11
-  - PYTORCH=0.1.12
-  - PYTORCH=0.2.0
   - PYTORCH=0.3.0
   - PYTORCH=0.3.1
   - PYTORCH=0.4.0
