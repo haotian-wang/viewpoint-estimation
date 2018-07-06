@@ -14,9 +14,11 @@ This repository is the implementation of the paper *Viewpoint Estimation for Wor
 
     |             | Python 2.7 | Python 3.6 |
     |:-----------:|:----------:|:----------:|
-    | PyTorch 0.3 |      √     |      √     |
-    | PyTorch 0.4 |      √     |      √     |
-    | PyTorch 0.5 |      √     |      √     |
+    | PyTorch 0.3 |![][passing]|![][passing]|
+    | PyTorch 0.4 |![][passing]|![][passing]|
+    | PyTorch 0.5 |![][passing]|![][passing]|
+
+[passing]: https://img.shields.io/badge/build-passing-brightgreen.svg
 
 - TensorboardX and Tensorboard (Optional)
 
