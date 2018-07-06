@@ -16,12 +16,12 @@ env:
   - PYTORCH=0.3.0
   - PYTORCH=0.3.1
   - PYTORCH=0.4.0
-matrix:
-  exclude:
-    - python: "3.6"
-      env: PYTORCH=0.1
-    - python: "3.6"
-      env: PYTORCH=0.1.6
+#matrix:
+#  exclude:
+#    - python: "3.6"
+#      env: PYTORCH=0.1
+#    - python: "3.6"
+#      env: PYTORCH=0.1.6
 install:
   - sudo apt-get update -qq
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
@@ -36,11 +36,10 @@ install:
 
   - conda create -q -n pytorch python=$TRAVIS_PYTHON_VERSION
   - source activate pytorch
-  - conda install -y pytorch=$PYTORCH -c soumith
+  - conda install -y pytorch-cpu=$PYTORCH -c soumith
   - conda install -y torchvision-cpu -c pytorch
   # - conda install -y numpy matplotlib tqdm pillow scikit-learn
   # - conda install -y pytest
-
 script:
    - echo Helloworld!
 #  - pytest test/

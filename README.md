@@ -1,25 +1,72 @@
 # Viewpoint Estimation for Workpieces with Deep Transfer Learning from Cold to Hot
 
-[![Build Status][travis-badge]][travis-link]
+[![Build Status][badge]][link]
 [![Github All Releases](https://img.shields.io/github/downloads/haotian-wang/viewpoint-estimation/total.svg)](https://github.com/haotian-wang/viewpoint-estimation/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This repository is the implementation of the paper *Viewpoint Estimation for Workpieces with Deep Transfer Learning from Cold to Hot* in *ICONIP 2018*. The code is implemented based on [PyTorch](https://pytorch.org/).
+This repository is the implementation of the paper *Viewpoint Estimation for Workpieces with Deep Transfer Learning from Cold to Hot* in *ICONIP 2018*. The code is implemented based on [PyTorch][pytorch].
 
 ## Requirements
 
 - PyTorch and Torchvision
 
-    Currently, we support the following versions of PyTorch.
+    We have tested the compatibility with different versions of PyTorch and Python based on Travis-CI.
 
-    |             |                 Python 2.7                 |                 Python 3.6                 |
-    |:-----------:|:------------------------------------------:|:------------------------------------------:|
-    | PyTorch 0.3 |[![Build Status][travis-badge]][travis-link]|[![Build Status][travis-badge]][travis-link]|
-    | PyTorch 0.4 |[![Build Status][travis-badge]][travis-link]|[![Build Status][travis-badge]][travis-link]|
-    | PyTorch 0.5 |[![Build Status][travis-badge]][travis-link]|[![Build Status][travis-badge]][travis-link]|
+    |                |         Python 2.7         |         Python 3.5         |         Python 3.6         |
+    |:--------------:|:--------------------------:|:--------------------------:|:--------------------------:|
+    | PyTorch 0.1    | [![Travis][badge1]][link]  | [![Travis][badge13]][link] | [![Travis][badge25]][link] |
+    | PyTorch 0.1.6  | [![Travis][badge2]][link]  | [![Travis][badge14]][link] | [![Travis][badge26]][link] |
+    | PyTorch 0.1.7  | [![Travis][badge3]][link]  | [![Travis][badge15]][link] | [![Travis][badge27]][link] |
+    | PyTorch 0.1.8  | [![Travis][badge4]][link]  | [![Travis][badge16]][link] | [![Travis][badge28]][link] |
+    | PyTorch 0.1.9  | [![Travis][badge5]][link]  | [![Travis][badge17]][link] | [![Travis][badge29]][link] |
+    | PyTorch 0.1.10 | [![Travis][badge6]][link]  | [![Travis][badge18]][link] | [![Travis][badge30]][link] |
+    | PyTorch 0.1.11 | [![Travis][badge7]][link]  | [![Travis][badge19]][link] | [![Travis][badge31]][link] |
+    | PyTorch 0.1.12 | [![Travis][badge8]][link]  | [![Travis][badge20]][link] | [![Travis][badge32]][link] |
+    | PyTorch 0.2.0  | [![Travis][badge9]][link]  | [![Travis][badge21]][link] | [![Travis][badge33]][link] |
+    | PyTorch 0.3.0  | [![Travis][badge10]][link] | [![Travis][badge22]][link] | [![Travis][badge34]][link] |
+    | PyTorch 0.3.1  | [![Travis][badge11]][link] | [![Travis][badge23]][link] | [![Travis][badge35]][link] |
+    | PyTorch 0.4.0  | [![Travis][badge12]][link] | [![Travis][badge24]][link] | [![Travis][badge36]][link] |
 
-[travis-badge]: https://travis-ci.org/haotian-wang/viewpoint-estimation.svg?branch=master
-[travis-link]: https://travis-ci.org/haotian-wang/viewpoint-estimation
+[python]:  https://python.org
+[pytorch]: https://pytorch.org
+[badge]:   https://travis-ci.org/haotian-wang/ci-test.svg?branch=master
+[badge1]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/1
+[badge2]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/2
+[badge3]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/3
+[badge4]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/4
+[badge5]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/5
+[badge6]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/6
+[badge7]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/7
+[badge8]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/8
+[badge9]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/9
+[badge10]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/10
+[badge11]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/11
+[badge12]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/12
+[badge13]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/13
+[badge14]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/14
+[badge15]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/15
+[badge16]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/16
+[badge17]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/17
+[badge18]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/18
+[badge19]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/19
+[badge20]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/20
+[badge21]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/21
+[badge22]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/22
+[badge23]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/23
+[badge24]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/24
+[badge25]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/25
+[badge26]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/26
+[badge27]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/27
+[badge28]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/28
+[badge29]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/29
+[badge30]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/30
+[badge31]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/31
+[badge32]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/32
+[badge33]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/33
+[badge34]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/34
+[badge35]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/35
+[badge36]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/36
+[link]: https://travis-ci.org/haotian-wang/ci-test
 
 - TensorboardX and Tensorboard (Optional)
 
