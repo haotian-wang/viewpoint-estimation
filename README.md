@@ -161,6 +161,7 @@ Finally, run the script, and you will get the filelists in `dataset` folder.
                 ])
             )
         ```
+
     - Set your own parameters
 
         ```python
@@ -176,6 +177,7 @@ Finally, run the script, and you will get the filelists in `dataset` folder.
             'GPUs': 0
         }
         ```
+
     - Tensorboard Writer
 
         If you have installed Tensorboard and TensorboardX, by default, we will use TensorboardX to visualize the training process. Otherwise, we will skip it. The outputs will be written to `sources/runs`. If you don't want to use Tensorboard, you may set `writer = None` in your code.
