@@ -1,6 +1,6 @@
 # Viewpoint Estimation for Workpieces with Deep Transfer Learning from Cold to Hot
 
-[![Build Status](https://travis-ci.org/haotian-wang/viewpoint-estimation.svg?branch=master)](https://travis-ci.org/haotian-wang/viewpoint-estimation)
+[![Build Status][travis-badge]][travis-link]
 [![Github All Releases](https://img.shields.io/github/downloads/haotian-wang/viewpoint-estimation/total.svg)](https://github.com/haotian-wang/viewpoint-estimation/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -12,13 +12,14 @@ This repository is the implementation of the paper *Viewpoint Estimation for Wor
 
     Currently, we support the following versions of PyTorch.
 
-    |             | Python 2.7 | Python 3.6 |
-    |:-----------:|:----------:|:----------:|
-    | PyTorch 0.3 |![][passing]|![][passing]|
-    | PyTorch 0.4 |![][passing]|![][passing]|
-    | PyTorch 0.5 |![][passing]|![][passing]|
+    |             |                 Python 2.7                 |                 Python 3.6                 |
+    |:-----------:|:------------------------------------------:|:------------------------------------------:|
+    | PyTorch 0.3 |[![Build Status][travis-badge]][travis-link]|[![Build Status][travis-badge]][travis-link]|
+    | PyTorch 0.4 |[![Build Status][travis-badge]][travis-link]|[![Build Status][travis-badge]][travis-link]|
+    | PyTorch 0.5 |[![Build Status][travis-badge]][travis-link]|[![Build Status][travis-badge]][travis-link]|
 
-[passing]: https://img.shields.io/badge/build-passing-brightgreen.svg
+[travis-badge]: https://travis-ci.org/haotian-wang/viewpoint-estimation.svg?branch=master
+[travis-link]: https://travis-ci.org/haotian-wang/viewpoint-estimation
 
 - TensorboardX and Tensorboard (Optional)
 
