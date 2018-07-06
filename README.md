@@ -10,7 +10,7 @@ This repository is the implementation of the paper *Viewpoint Estimation for Wor
 
 - PyTorch and Torchvision
 
-    We have tested the compatibility with different versions of PyTorch and Python based on Travis-CI.
+    We have tested the compatibility with different versions of [Python][python] and [PyTorch][pytorch] based on Travis-CI.
 
     |                |         Python 2.7         |         Python 3.5         |         Python 3.6         |
     |:--------------:|:--------------------------:|:--------------------------:|:--------------------------:|
@@ -29,44 +29,44 @@ This repository is the implementation of the paper *Viewpoint Estimation for Wor
 
 [python]:  https://python.org
 [pytorch]: https://pytorch.org
-[badge]:   https://travis-ci.org/haotian-wang/ci-test.svg?branch=master
-[badge1]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/1
-[badge2]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/2
-[badge3]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/3
-[badge4]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/4
-[badge5]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/5
-[badge6]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/6
-[badge7]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/7
-[badge8]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/8
-[badge9]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/9
-[badge10]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/10
-[badge11]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/11
-[badge12]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/12
-[badge13]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/13
-[badge14]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/14
-[badge15]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/15
-[badge16]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/16
-[badge17]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/17
-[badge18]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/18
-[badge19]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/19
-[badge20]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/20
-[badge21]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/21
-[badge22]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/22
-[badge23]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/23
-[badge24]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/24
-[badge25]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/25
-[badge26]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/26
-[badge27]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/27
-[badge28]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/28
-[badge29]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/29
-[badge30]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/30
-[badge31]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/31
-[badge32]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/32
-[badge33]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/33
-[badge34]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/34
-[badge35]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/35
-[badge36]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/ci-test/branches/master/36
-[link]: https://travis-ci.org/haotian-wang/ci-test
+[badge]:   https://travis-ci.org/haotian-wang/viewpoint-estimation.svg?branch=master
+[badge1]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/1
+[badge2]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/2
+[badge3]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/3
+[badge4]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/4
+[badge5]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/5
+[badge6]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/6
+[badge7]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/7
+[badge8]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/8
+[badge9]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/9
+[badge10]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/10
+[badge11]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/11
+[badge12]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/12
+[badge13]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/13
+[badge14]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/14
+[badge15]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/15
+[badge16]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/16
+[badge17]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/17
+[badge18]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/18
+[badge19]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/19
+[badge20]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/20
+[badge21]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/21
+[badge22]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/22
+[badge23]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/23
+[badge24]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/24
+[badge25]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/25
+[badge26]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/26
+[badge27]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/27
+[badge28]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/28
+[badge29]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/29
+[badge30]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/30
+[badge31]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/31
+[badge32]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/32
+[badge33]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/33
+[badge34]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/34
+[badge35]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/35
+[badge36]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/36
+[link]: https://travis-ci.org/haotian-wang/viewpoint-estimation
 
 - TensorboardX and Tensorboard (Optional)
 

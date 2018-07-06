@@ -1,20 +1,20 @@
 language: python
 python:
-  #- "2.7"
-  #- "3.5"
+  - "2.7"
+  - "3.5"
   - "3.6"
 env:
-  #- PYTORCH=0.1
-  #- PYTORCH=0.1.6
-  #- PYTORCH=0.1.7
-  #- PYTORCH=0.1.8
-  #- PYTORCH=0.1.9
-  #- PYTORCH=0.1.10
-  #- PYTORCH=0.1.11
-  #- PYTORCH=0.1.12
-  #- PYTORCH=0.2.0
-  #- PYTORCH=0.3.0
-  #- PYTORCH=0.3.1
+  - PYTORCH=0.1
+  - PYTORCH=0.1.6
+  - PYTORCH=0.1.7
+  - PYTORCH=0.1.8
+  - PYTORCH=0.1.9
+  - PYTORCH=0.1.10
+  - PYTORCH=0.1.11
+  - PYTORCH=0.1.12
+  - PYTORCH=0.2.0
+  - PYTORCH=0.3.0
+  - PYTORCH=0.3.1
   - PYTORCH=0.4.0
 install:
   - sudo apt-get update -qq
@@ -30,11 +30,9 @@ install:
 
   - conda create -q -n pytorch python=$TRAVIS_PYTHON_VERSION
   - source activate pytorch
+
   - conda install -y pytorch=$PYTORCH -c soumith
-  - conda install -y cython
+  - conda install -y numpy matplotlib tqdm pillow scikit-learn cython pytest
   - pip install torchvision
-  # - conda install -y torchvision-cpu -c pytorch
-  - conda install -y numpy matplotlib tqdm pillow scikit-learn
-  - conda install -y pytest
 script:
    - pytest test/
