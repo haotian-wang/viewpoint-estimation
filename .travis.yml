@@ -43,5 +43,5 @@ install:
   - conda install -y numpy matplotlib tqdm pillow scikit-learn
   - conda install -y pytest
 
-script:
-  - pytest test/
+#script:
+#  - pytest test/
