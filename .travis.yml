@@ -1,29 +1,81 @@
 language: python
-python:
-  - "2.7"
-  - "3.5"
-  - "3.6"
-env:
-  - PYTORCH=0.3.0
-  - PYTORCH=0.3.1
-  - PYTORCH=0.4.0
+matrix:
+  include:
+  - env:
+    - PYTHON=2.7
+    - PYTORCH=0.3.0
+  - env:
+    - PYTHON=2.7
+    - PYTORCH=0.3.1
+  - env:
+    - PYTHON=2.7
+    - PYTORCH=0.4.0
+  - env:
+    - PYTHON=2.7
+    - PYTORCH=0.4.1
+  - env:
+    - PYTHON=2.7
+    - PYTORCH=1.0.0
+  - env:
+    - PYTHON=3.5
+    - PYTORCH=0.3.0
+  - env:
+    - PYTHON=3.5
+    - PYTORCH=0.3.1
+  - env:
+    - PYTHON=3.5
+    - PYTORCH=0.4.0
+  - env:
+    - PYTHON=3.5
+    - PYTORCH=0.4.1
+  - env:
+    - PYTHON=3.5
+    - PYTORCH=1.0.0
+  - env:
+    - PYTHON=3.6
+    - PYTORCH=0.3.0
+  - env:
+    - PYTHON=3.6
+    - PYTORCH=0.3.1
+  - env:
+    - PYTHON=3.6
+    - PYTORCH=0.4.0
+  - env:
+    - PYTHON=3.6
+    - PYTORCH=0.4.1
+  - env:
+    - PYTHON=3.6
+    - PYTORCH=1.0.0
+  - env:
+    - PYTHON=3.7
+    - PYTORCH=0.3.0
+  - env:
+    - PYTHON=3.7
+    - PYTORCH=0.3.1
+  - env:
+    - PYTHON=3.7
+    - PYTORCH=0.4.0
+  - env:
+    - PYTHON=3.7
+    - PYTORCH=0.4.1
+  - env:
+    - PYTHON=3.7
+    - PYTORCH=1.0.0
 install:
-  - sudo apt-get update -qq
-  - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
-      wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
-    else
-      wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
-    fi
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
   - bash miniconda.sh -b -p $HOME/miniconda
   - export PATH=$HOME/miniconda/bin:$PATH
-  - conda config --set always_yes yes --set changeps1 no
-  - conda update -q conda
 
-  - conda create -q -n pytorch python=$TRAVIS_PYTHON_VERSION
+  - conda create -y -q -n pytorch python=$PYTHON
   - source activate pytorch
-
-  - conda install -y pytorch=$PYTORCH -c soumith
+  - if [[ "$PYTORCH" == "0.3.0" || "$PYTORCH" == "0.3.1" ]]; then
+      conda install -y pytorch=$PYTORCH torchvision cuda90 -c pytorch;
+    else
+      conda install -y pytorch-cpu=$PYTORCH torchvision-cpu -c pytorch;
+    fi
   - conda install -y numpy matplotlib tqdm pillow scikit-learn cython pytest
-  - pip install torchvision
+  - pip install torchvision codecov
 script:
-   - pytest test/
+  - coverage run test/test_network.py
+after_success:
+  - codecov

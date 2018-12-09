@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, print_function, division
-import os
 import random
 import logging
 import traceback
+from multiprocessing import cpu_count
 from distutils.version import LooseVersion
 
 import torch
@@ -81,7 +81,7 @@ def train(model, cadset, realset, optimizer, hot=False,
     max_recall, max_ap, max_mean_ap = 0, None, 0
     for epoch in range(kwargs['epoch']):
         cadloader = DataLoader(cadset, batch_size=kwargs['batch_size'], shuffle=True,
-                               num_workers=os.cpu_count(), drop_last=True)
+                               num_workers=cpu_count(), drop_last=True)
         for batch, (images_cad, labels_cad) in enumerate(cadloader):
             # Test accuracies
             model.eval()

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """predict.py - Predict all samples in testset
 """
-import os
 import torch
 import numpy as np
+from multiprocessing import cpu_count
 from tqdm import tqdm
 from torch import nn
 from torch.utils.data import DataLoader
@@ -35,7 +35,7 @@ def predict(model, testset, **kwargs):
     all_preds = np.zeros(shape=len(testset), dtype=np.int)
     all_labels = np.zeros(shape=len(testset), dtype=np.int)
     model.eval()
-    for batch, (images, labels) in enumerate(tqdm(DataLoader(testset, batch_size=kwargs['batch_size'], shuffle=False, num_workers=os.cpu_count()))):
+    for batch, (images, labels) in enumerate(tqdm(DataLoader(testset, batch_size=kwargs['batch_size'], shuffle=False, num_workers=cpu_count()))):
         images = Variable(images)
         if kwargs['GPUs']:
             images = images.cuda(kwargs['GPUs'][0])

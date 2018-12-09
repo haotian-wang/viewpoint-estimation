@@ -1,8 +1,7 @@
 # Viewpoint Estimation for Workpieces with Deep Transfer Learning from Cold to Hot
 
-[![Build Status][badge]][link]
-[![Github All Releases](https://img.shields.io/github/downloads/haotian-wang/viewpoint-estimation/total.svg)](https://github.com/haotian-wang/viewpoint-estimation/releases)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Build Status][travis]][link]
+[![Build Status][codecov]][codecov_link]
 
 This repository is the implementation of the paper *Viewpoint Estimation for Workpieces with Deep Transfer Learning from Cold to Hot* in *ICONIP 2018*. The code is implemented based on [PyTorch][pytorch].
 
@@ -12,15 +11,18 @@ This repository is the implementation of the paper *Viewpoint Estimation for Wor
 
     We have tested the compatibility with the following versions of [Python][python] and [PyTorch][pytorch] based on [Travis-CI][link].
 
-    |                |         Python 2.7        |         Python 3.5        |         Python 3.6        |
-    |:--------------:|:-------------------------:|:-------------------------:|:-------------------------:|
-    | PyTorch 0.3.0  | [![Travis][badge1]][link] | [![Travis][badge4]][link] | [![Travis][badge7]][link] |
-    | PyTorch 0.3.1  | [![Travis][badge2]][link] | [![Travis][badge5]][link] | [![Travis][badge8]][link] |
-    | PyTorch 0.4.0  | [![Travis][badge3]][link] | [![Travis][badge6]][link] | [![Travis][badge9]][link] |
+    |                |         Python 2.7        |         Python 3.5         |         Python 3.6         |         Python 3.7         |
+    |:--------------:|:-------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|
+    | PyTorch 0.3.0  | [![Travis][badge1]][link] | [![Travis][badge6]][link]  | [![Travis][badge11]][link] | [![Travis][badge16]][link] |
+    | PyTorch 0.3.1  | [![Travis][badge2]][link] | [![Travis][badge7]][link]  | [![Travis][badge12]][link] | [![Travis][badge17]][link] |
+    | PyTorch 0.4.0  | [![Travis][badge3]][link] | [![Travis][badge8]][link]  | [![Travis][badge13]][link] | [![Travis][badge18]][link] |
+    | PyTorch 0.4.1  | [![Travis][badge4]][link] | [![Travis][badge9]][link]  | [![Travis][badge14]][link] | [![Travis][badge19]][link] |
+    | PyTorch 1.0.0  | [![Travis][badge5]][link] | [![Travis][badge10]][link] | [![Travis][badge15]][link] | [![Travis][badge20]][link] |
 
 [python]:  https://python.org
 [pytorch]: https://pytorch.org
-[badge]:   https://travis-ci.org/haotian-wang/viewpoint-estimation.svg?branch=master
+[travis]:  https://travis-ci.org/haotian-wang/viewpoint-estimation.svg?branch=master
+[codecov]: https://codecov.io/gh/haotian-wang/viewpoint-estimation/branch/master/graph/badge.svg
 [badge1]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/1
 [badge2]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/2
 [badge3]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/3
@@ -30,7 +32,19 @@ This repository is the implementation of the paper *Viewpoint Estimation for Wor
 [badge7]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/7
 [badge8]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/8
 [badge9]:  https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/9
-[link]: https://travis-ci.org/haotian-wang/viewpoint-estimation
+[badge10]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/10
+[badge11]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/11
+[badge12]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/12
+[badge13]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/13
+[badge14]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/14
+[badge15]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/15
+[badge16]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/16
+[badge17]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/17
+[badge18]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/18
+[badge19]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/19
+[badge20]: https://travis-matrix-badges.herokuapp.com/repos/haotian-wang/viewpoint-estimation/branches/master/20
+[link]:  https://travis-ci.org/haotian-wang/viewpoint-estimation
+[codecov_link]: https://codecov.io/gh/haotian-wang/viewpoint-estimation
 
 - TensorboardX and Tensorboard (Optional)
 
